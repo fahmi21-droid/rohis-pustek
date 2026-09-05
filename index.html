@@ -121,9 +121,25 @@
             <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
         </div>
 
-        <div class="form-group">
-            <label for="nis">NIS / Kelas</label>
-            <input type="text" id="nis" name="nis" placeholder="Contoh: X TKJ 2/X TKR 3" required>
+         <div class="form-group">
+            <label for="kelas">Kelas>
+            <select id="kelas" name="kelas" required>
+                <option value="" disabled selected>-- Pilih Kelas --</option>
+                <option value="X TKR">X TKR</option>
+                <option value="X TSM">X TSM</option>
+                <option value="X DKV">X DKV</option>
+                <option value="X TKJ">X TKJ</option>
+                <option value="X AK">X AK</option>
+                <option value="X MP">X MP</option>
+                <option value="X TM">X TM</option>
+                <option value="XI TKR">XI TKR</option>
+                <option value="XI TSM">XI TSM</option>
+                <option value="XI DKV">XI DKV</option>
+                <option value="XI TKJ">XI TKJ</option>
+                <option value="XI AK">XI AK</option>
+                <option value="XI MP">XI MP</option>
+                <option value="XI TM">XI TM</option>
+            </select>
         </div>
 
         <div class="form-group">
@@ -180,7 +196,7 @@ function kirimKeWA() {
     }
 
     // 3. Masukkan nomor WhatsApp pengurus (Ganti 628xxx di bawah)
-    const noPengurus = "6281234567890"; 
+    const noPengurus = "6281211819058"; 
 
     // 4. Format pesan WhatsApp
     const pesan = `*PENDAFTARAN ROHIS SMK PUSTEK*%0A%0A` +
